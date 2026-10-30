@@ -480,7 +480,7 @@ export class UserSettings {
             return this.set('backdropScreensaverInterval', val.toString(), false);
         }
 
-        return parseInt(this.get('backdropScreensaverInterval', false), 10) || 20;
+        return parseInt(this.get('backdropScreensaverInterval', false), 10) || 30;
     }
 
     /**
