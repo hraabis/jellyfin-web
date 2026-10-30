@@ -420,8 +420,8 @@ export default function (options) {
             originalImage: getImgUrl(item, currentOptions.user),
             Id: item.Id,
             ServerId: item.ServerId,
-            title: item.Name,
-            description: getSlideDescriptionFromItem(item)
+            title: options.showTitle ? item.Name : null,
+            description: options.showTitle ? getSlideDescriptionFromItem(item) : null
         });
     }
 
