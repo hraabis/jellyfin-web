@@ -162,7 +162,7 @@ export default function (options) {
         });
 
         dialog.classList.add('slideshowDialog');
-        if (slideshowOptions.screenSaver === true) {
+        if (slideshowOptions.animateSlideshow === true && slideshowOptions.screenSaver === true) {
             dialog.classList.add('slideshowScreensaver');
         }
 

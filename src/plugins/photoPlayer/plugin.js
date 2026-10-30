@@ -31,6 +31,7 @@ export default class PhotoPlayer {
                             enabled: !!(options.autoplay || options.shuffle)
                         },
                         user: result,
+                        animateSlideshow: userSettings.enableSlideshowAnimation(),
                         onClose: () => screenSaverManager.unblock()
                     });
 

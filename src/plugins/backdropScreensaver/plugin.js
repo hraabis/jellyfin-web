@@ -33,7 +33,8 @@ class BackdropScreensaver {
                         autoplay: {
                             delay: userSettings.backdropScreensaverInterval() * 1000
                         },
-                        screenSaver: true
+                        screenSaver: true,
+                        animateSlideshow: userSettings.enableSlideshowAnimation()
                     });
 
                     newSlideShow.show();
