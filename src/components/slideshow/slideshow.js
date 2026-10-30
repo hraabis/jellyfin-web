@@ -162,6 +162,9 @@ export default function (options) {
         });
 
         dialog.classList.add('slideshowDialog');
+        if (slideshowOptions.screenSaver === true) {
+            dialog.classList.add('slideshowScreensaver');
+        }
 
         let html = '';
 
